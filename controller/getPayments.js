@@ -5,11 +5,11 @@ const last7Days = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString().s
 const last30Days = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
 
 //===================filter using==============================
-exports.getPayment = (req, res) => {
+exports.getPayments = (req, res) => {
 
     const filters = {
-        from: '2023-05-02', // Start date for payments
-        to: '2023-05-04', // End date for payments
+        from: '2023-05-03', // Start date for payments
+        to: '2023-05-05', // End date for payments
         // from: today, // Start date for payments (last 7 days)
         // to: today, // End date for payments (today)
         // count: 10, // Maximum number of payments to retrieve
@@ -23,3 +23,4 @@ exports.getPayment = (req, res) => {
         console.log(payments);
     });
 }
+

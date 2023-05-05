@@ -1,5 +1,5 @@
 const express = require('express');
-require("./database/db").connect()
+require("./database/db").connect();
 const dotenv=require("dotenv");
 const OrderRouter = require("./router/orderRouter");
 const UserRouter = require("./router/userRouter");
